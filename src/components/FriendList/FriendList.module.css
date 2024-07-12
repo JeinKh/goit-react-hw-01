@@ -1,0 +1,12 @@
+.list{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    list-style-type: none;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #191919;
+}

@@ -1,32 +1,37 @@
 import s from './Profile.module.css'
 
-const Profile = () => {
+const Profile = ({name, tag, location, image, stats}) => {
     return (
-    <div>
-        <div>
-            <img
-            src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-            alt="User avatar"
-            />
-            <p>Petra Marica</p>
-            <p>@pmarica</p>
-            <p>Salvador, Brasil</p>
+        <div className={s.userCard}>
+        <div className={s.contentWrapper}>
+            <div className={s.imgWrapper}>
+                <img
+                src={image}
+                alt="User avatar"
+                />
+            </div>
+            <div className={s.content}>
+                <p className={s.name}>{name}</p>
+                <p className={s.textContent}>@{tag}</p>
+                <p className={s.textContent}>{location}</p>
+            </div>
         </div>
-        <ul>
-            <li>
+    
+        <ul className={s.list}>
+            <li className={s.item}>
             <span>Followers</span>
-            <span>1000</span>
+            <span>{stats.followers}</span>
             </li>
-            <li>
+            <li className={s.item}>
             <span>Views</span>
-            <span>2000</span>
+            <span>{stats.views}</span>
             </li>
-            <li>
+            <li className={s.item}>
             <span>Likes</span>
-            <span>3000</span>
+            <span>{stats.likes}</span>
             </li>
         </ul>
-    </div>
+        </div>
     );
 }; 
 
