@@ -1,0 +1,28 @@
+.wrapper {
+  width: 700px;
+  height: 350px;
+  margin-top: 50px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-spacing: 0;
+  border: 1px solid #0a0a0a;
+}
+
+.header {
+  color: azure;
+  background-color: #191919;
+}
+
+tr:nth-child(even) {
+  background-color: #71737389;
+}
+
+th,
+td {
+  border: 1px solid #0a0a0a;
+}
+
+.type::first-letter {
+  text-transform: uppercase;
+}
